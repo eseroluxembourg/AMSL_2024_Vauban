@@ -24,4 +24,9 @@ jobs:
       - name: List files in the validator repository
         run: |
           ls ${{ github.workspace }}/validator
+      - name: Run script file
+        run: |
+          chmod +x ./validator/check_requirements.sh
+          ./validator/check_requirements.sh
+        shell: bash
       - run: echo "🍏 This job's status is ${{ job.status }}."
