@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          name: eseroluxembourg/astropi_missionspacelab_validator
+          repository: eseroluxembourg/astropi_missionspacelab_validator
           ref: refs/heads/main
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
